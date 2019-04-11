@@ -11,13 +11,19 @@
 
   <body>
     <script>
-      // When the document is loaded, we call this 'anonymous function'
-      $(document).ready(function() {
-        alert("Hello JQuery!");
+      $(document).ready(testFunc);
 
-        let markup = '<div id="my-div"><p>I was appended to the body with JQuery!</p></div>';
-        $('body').append(markup);
-      });  
+      function testFunc() {
+        console.log('We are calling the testFunc function!');
+      }
+
+      // When the document is loaded, we call this 'anonymous function'
+      // $(document).ready(function() {
+      //   console.log('We are calling an anonymous function!');
+
+      //   let markup = '<div id="my-div"><p>I was appended to the body with JQuery!</p></div>';
+      //   $('body').append(markup);
+      // });
     </script>
   </body>
 </html>
